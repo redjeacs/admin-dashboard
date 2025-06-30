@@ -11,13 +11,29 @@ body {
   grid-template-rows: 1fr 5fr;
 }
 
+body > div{
+  padding: 20px;
+}
+
 header {
   grid-area: 1 / 2 / 2 / 4;
 }
 
 .sidebar {
+  display: grid;
   grid-area: 1 / 1 / 5 / 2;
   background-color: lightblue;
+  grid-template-rows: 1fr 4fr 5fr;
+}
+
+.brand-section {
+  font-size: 20px;
+  align-items: center;
+}
+
+.logo {
+  font-size: 10px;
+  max-width: 28px;
 }
 
 .main-container {
