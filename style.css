@@ -174,4 +174,14 @@ header {
 .main-container {
   grid-area: 2 / 2 / 4 / 5;
   background-color: rgb(219, 219, 219);
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  padding: 30px 20px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.projects-container {
+  grid-row: 1 / 3;
 }
