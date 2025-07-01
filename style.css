@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   font-family: roboto, arial, sans-serif;
+  border-style: none;
 }
 
 body {
@@ -59,8 +60,8 @@ header {
 
 .nav-menu img, 
 .toolbar img {
-  width: 1em;
-  height: 1em;
+  width: 20px;
+  height: 20px;
 }
 
 .nav-menu div, 
@@ -75,8 +76,59 @@ header {
   background-color: rgb(167, 173, 179);
 }
 
+header {
+  display: grid;
+  grid-template-columns: 5fr 3fr;
+  grid-template-rows: 1fr 1fr;
+  padding: 20px 40px;
+}
+
+.search-section {
+  display: grid;
+  grid-template-columns: 20px 1fr;
+  gap: 10px;
+  padding: 0 20px;
+  align-items: center;
+}
+
+.search-btn, 
+.notification-btn {
+  width: 25px;
+  height: 25px;
+  border: none;
+  background-color: white;
+}
+
 .search-btn {
   background-image: url(icons/magnify.svg);
+}
+
+#searchbar {
+  height: 30px;
+  width: 1fr;
+  border-radius: 30px;
+  background-color: rgb(233, 233, 233);
+}
+
+.user-section {
+  display: grid;
+  grid-template-columns: 25px 40px 1fr;
+  align-items: center;
+  gap: 30px;
+  padding: 0 20px;
+  justify-self: center;
+}
+
+.notification-btn {
+  background-image: url(icons/bell-ring-outline.svg);
+}
+
+.user-pic {
+  width: 40px;
+  background-color: orange;
+  border-radius: 50%;
+}
+
+.profile-pic {
   width: 20px;
-  height: 20px;
 }
