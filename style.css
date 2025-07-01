@@ -71,17 +71,14 @@ header {
   gap: 10px;
 }
 
-.main-container {
-  grid-area: 2 / 2 / 4 / 5;
-  background-color: rgb(167, 173, 179);
-}
-
-header {
+.header {
   display: grid;
   grid-template-columns: 5fr 3fr;
   grid-template-rows: 1fr 1fr;
   padding: 20px 40px;
   row-gap: 20px;
+  box-shadow: 0 5px 5px rgb(178, 184, 190);
+  z-index: 100;
 }
 
 .search-section {
@@ -172,4 +169,9 @@ header {
   width: 100px;
   height: 40px;
   border-radius: 25px;
+}
+
+.main-container {
+  grid-area: 2 / 2 / 4 / 5;
+  background-color: rgb(219, 219, 219);
 }
