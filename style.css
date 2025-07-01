@@ -199,4 +199,25 @@ header {
   border-radius: 10px;
   padding: 20px;
   border-left: 10px solid orange;
+  display: grid;
+  grid-template-rows: 1fr 30px;
+}
+
+.item-text {
+  grid-row: 1 / 2;
+}
+
+.item-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.item-description {
+  font-size: 15px;
+  color: rgb(158, 158, 158);
+  font-weight: 500;
+}
+
+.item-btns {
+  background-color: black;
 }
