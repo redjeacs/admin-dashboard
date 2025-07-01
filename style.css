@@ -74,3 +74,9 @@ header {
   grid-area: 2 / 2 / 4 / 5;
   background-color: rgb(167, 173, 179);
 }
+
+.search-btn {
+  background-image: url(icons/magnify.svg);
+  width: 20px;
+  height: 20px;
+}
