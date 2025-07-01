@@ -176,12 +176,27 @@ header {
   background-color: rgb(219, 219, 219);
   display: grid;
   grid-template-columns: 3fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 20px 1fr 20px 1fr;
   padding: 30px 20px;
+  gap: 20px;
+}
+
+.main-container > p {
   font-size: 20px;
   font-weight: 500;
 }
 
-.projects-container {
-  grid-row: 1 / 3;
+.projects-grid {
+  grid-row: 2 / 5;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.projects-grid-items {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  border-left: 10px solid orange;
 }
